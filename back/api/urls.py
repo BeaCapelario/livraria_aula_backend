@@ -17,7 +17,7 @@ urlpatterns = [
     path('editora/<int:pk>', EditoraDetailView.as_view()),
     path('livro/<int:pk>', LivroDetailView.as_view()),
     
-    #### TOLKEN
+    #### TOKEN
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
